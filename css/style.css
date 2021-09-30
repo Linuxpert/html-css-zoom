@@ -11,28 +11,41 @@
 #barra {
     height: 50px;
     background-color: lightgray;
+    display: flex;
+    align-items: center;
 }
 
 #pallini {
     height: 25px;
-    width: 50px;
-    background-color: lightseagreen;
-    display: inline-block;
+    width: 80px;
     margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 #box-id {
     height: 25px;
-    width: 70px;
-    background-color: lightseagreen;
-    display: inline-block;
     margin-left: 45%;
 }
 
-#pallini, #box-id{
-    margin-top: 12px;
+
+#rosso, #giallo, #verde {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
 }
 
+#rosso {
+    background-color: red;
+}
+#giallo {
+    background-color: rgb(255, 211, 13);
+}
+#verde {
+    background-color: green;
+}
 /* main */
 
 #box-sfondo{
@@ -50,20 +63,24 @@
 
 #speaker-view {
     height: 30px;
-    /* debug */
-    background-color: red;
-    width: 50px;
+   
 
 }
+.pulsanti{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
 
 #fullscreen {
     height: 30px;
     margin: 0 10px;
-    /* debug */
-    background-color: red;
-    width: 30px;
-
+    
 }
+
 
 /* webcam */
 .webcam {
@@ -82,7 +99,18 @@
 .freccia {
     width: 30px;
     height: 30px;
-    background-color: seagreen;
+    color: white;
+    
+}
+.sinistra-destra {
+    text-decoration: none;
+    color: darkgray;
+}
+.fa-caret-left {
+    font-size: 50px;
+}
+.fa-caret-right {
+    font-size: 50px;
 }
 
 #box-centro {
@@ -94,37 +122,16 @@
 
 }
 .img{
-    height: 50px;
+    height: 120px;
     width: 19%;
     background-color: saddlebrown;
     margin: 5px;
+    
 }
-
-
-
-/* footer */
-#barra-footer {
-    height: 70px;
-    background-color: rgb(66, 65, 65);
-    display: flex;
-    justify-content: space-between;
-}
-
-#mic-vid {
+.img img {
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    width: 10%;
-    background-color: springgreen;
 
 }
 
-#navigazione {
-    height: 100%;
-    width: 60%;
-    background-color: springgreen;
-}
-
-#endmeeting {
-    height: 100%;
-    width: 10%;
-    background-color: springgreen;
-}
