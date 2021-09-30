@@ -4,3 +4,69 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
+
+/* header */
+
+#barra {
+    height: 50px;
+    background-color: lightgray;
+}
+
+#pallini {
+    height: 25px;
+    width: 50px;
+    background-color: lightseagreen;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#box-id {
+    height: 25px;
+    width: 70px;
+    background-color: lightseagreen;
+    display: inline-block;
+    margin-left: 45%;
+}
+
+#pallini, #box-id{
+    margin-top: 12px;
+}
+
+/* main */
+
+#box-sfondo{
+    height: calc(100vh - 120px);
+    background-color: black;
+}
+
+#riga-pulsanti {
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#speaker-view {
+    height: 30px;
+    /* debug */
+    background-color: red;
+    width: 50px;
+
+}
+
+#fullscreen {
+    height: 30px;
+    margin: 0 10px;
+    /* debug */
+    background-color: red;
+    width: 30px;
+
+}
+
+
+/* footer */
+#barra-footer {
+    height: 70px;
+    background-color: rgb(66, 65, 65);
+}
